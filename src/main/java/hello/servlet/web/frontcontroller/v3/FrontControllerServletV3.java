@@ -21,7 +21,7 @@ public class FrontControllerServletV3 extends HttpServlet {
     private Map<String, ControllerV3> controllerMap = new HashMap<>();
 
     //public FrontControllerServletV3(Map<String, ControllerV3> controllerMap) { ~ }
-    //이렇게 되어 있어서 에러 떴었음, 그런데 이렇게 되어 있으면 서블릿 컨테이너는 어떻게 되는 거지?
+    //이렇게 되어 있어서 에러 떴었음(404), 그런데 이렇게 되어 있으면 서블릿 컨테이너는 어떻게 되는 거지?
     public FrontControllerServletV3() {
         controllerMap.put("/front-controller/v3/members/new-form", new MemberFormControllerV3());
         controllerMap.put("/front-controller/v3/members/save", new MemberSaveControllerV3());
